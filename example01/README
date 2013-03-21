@@ -1,0 +1,5 @@
+This is example jsf-jetty-8 from Michael Kurz's JSFlive blog:
+http://jsflive.wordpress.com/2012/08/19/jsf-2-on-jetty-8/
+
+It can be started directly with the Maven Jetty Plugin. Simply call the following command:
+mvn jetty:run
