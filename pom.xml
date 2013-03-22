@@ -10,8 +10,8 @@
     <name>JSFlive - JSF 2.2 Examples</name>
 
     <modules>
-        <module>example01</module>
-        <module>example02</module>
+        <module>jsf22-example01</module>
+        <module>jsf22-example02</module>
     </modules>
 
     <build>
