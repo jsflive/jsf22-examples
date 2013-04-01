@@ -1,0 +1,9 @@
+.collapsiblePanel-header {
+    display:block;
+}
+
+.collapsiblePanel-img {
+    margin-top: 3px;
+    margin-right: 10px;
+    float: left;
+}

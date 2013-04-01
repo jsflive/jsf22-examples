@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:jl="http://java.sun.com/jsf/composite/jsflive">
+<h:head>
+    <title>JSFlive JSF 2.2 - Example 03</title>
+</h:head>
+<h:body>
+    <h:form id="form">
+        <h:outputText value="JSFlive JSF 2.2 Configurable resource directory test page"/>
+        <jl:collapsiblePanel id="panel" collapsed="#{testController.collapsed}">
+            <f:facet name="header">
+                <h3><h:outputText value="Collapsible information"/></h3>
+            </f:facet>
+            <h:outputText value="This information is collapsible."/>
+        </jl:collapsiblePanel>
+    </h:form>
+</h:body>
+</html>

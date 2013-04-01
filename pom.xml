@@ -12,6 +12,7 @@
     <modules>
         <module>jsf22-example01</module>
         <module>jsf22-example02</module>
+        <module>jsf22-example03</module>
     </modules>
 
     <build>
