@@ -1,4 +1,4 @@
-package at.jsflive.jsf22.example02;
+package at.jsflive.jsf22.example01;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ApplicationScoped;
