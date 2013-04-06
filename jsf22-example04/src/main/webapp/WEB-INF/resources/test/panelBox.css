@@ -1,0 +1,15 @@
+.box {
+	background-color: rgb(248, 248, 235);
+	display: block;
+	border: solid 1px rgb(126, 125, 123);
+	padding: 2px;
+	margin-bottom: 5px;
+}
+
+.box-header {
+    display: block;
+	margin: 0;
+	padding: 2px;
+	font-weight: bold;
+	background-color: rgb(235, 230, 215);
+}
