@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:cc="http://java.sun.com/jsf/composite"
+        xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <cc:interface>
+        <cc:attribute name="value"/>
+        <cc:editableValueHolder name="input"/>
+    </cc:interface>
+
+    <cc:implementation>
+        <h:inputText id="input" value="#{cc.attrs.value}"/>
+    </cc:implementation>
+
+</ui:composition>

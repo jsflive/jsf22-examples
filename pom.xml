@@ -10,6 +10,7 @@
     <name>JSFlive - JSF 2.2 Examples</name>
 
     <modules>
+        <module>jsf22-cc-empty-attribute</module>
         <module>jsf22-collection-data-model</module>
         <module>jsf22-composite-component-tags</module>
         <module>jsf22-resource-dir</module>
