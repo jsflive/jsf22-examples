@@ -1,0 +1,8 @@
+JSFlive JSF 2.2: View actions
+=============================
+
+This is example jsf22-view-action from Michael Kurz's JSFlive post on JSF 2.2 view actions:
+http://jsflive.wordpress.com/2013/03/22/jsf22-view-actions
+
+It can be started directly with the Maven Jetty Plugin. Simply call the following command:
+mvn jetty:run

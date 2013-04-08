@@ -10,10 +10,10 @@
     <name>JSFlive - JSF 2.2 Examples</name>
 
     <modules>
-        <module>jsf22-example01</module>
-        <module>jsf22-example02</module>
-        <module>jsf22-example03</module>
-        <module>jsf22-example04</module>
+        <module>jsf22-collection-data-model</module>
+        <module>jsf22-composite-component-tags</module>
+        <module>jsf22-resource-dir</module>
+        <module>jsf22-view-action</module>
     </modules>
 
     <build>

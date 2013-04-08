@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>at.jsflive</groupId>
-    <artifactId>jsf22-example02</artifactId>
+    <artifactId>jsf22-view-action</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>JSFlive - JSF 2.2 Example 02 (CollectionDataModel)</name>
+    <name>JSFlive - JSF 2.2 View-Actions</name>
 
     <dependencies>
         <dependency>
@@ -28,15 +28,10 @@
             <version>1.0</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
     </dependencies>
 
     <build>
-        <finalName>jsf22-example02</finalName>
+        <finalName>jsf22-view-action</finalName>
         <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>

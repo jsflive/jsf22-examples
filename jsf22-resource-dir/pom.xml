@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>at.jsflive</groupId>
-    <artifactId>jsf22-example04</artifactId>
+    <artifactId>jsf22-resource-dir</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>JSFlive - JSF 2.2 Example 04 (Configurable resource directory)</name>
+    <name>JSFlive - JSF 2.2 Configurable resource directory</name>
 
     <dependencies>
         <dependency>
@@ -42,7 +42,7 @@
     </dependencies>
 
     <build>
-        <finalName>jsf22-example04</finalName>
+        <finalName>jsf22-resource-dir</finalName>
         <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>
