@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         version="3.0">
 
-	<description>JSFlive - Collapsible panel 01</description>
+	<description>JSFlive - JSF 2.2 CollectionDataModel</description>
 
 	<!-- Faces Servlet -->
 	<servlet>
