@@ -14,14 +14,18 @@
         <h:panelGrid columns="2">
             <h:outputText value="File:"/>
             <h:inputFile id="file" value="#{uploadPage.uploadedFile}"
-                         validator="#{uploadPage.validateFile}"/>
+                    validator="#{uploadPage.validateFile}"/>
         </h:panelGrid>
 
         <h:commandButton value="Upload File" action="#{uploadPage.uploadFile}"/>
+        <h:commandButton value="Upload File (Ajax)" action="#{uploadPage.uploadFile}">
+            <f:ajax execute="file" render="@all"/>
+        </h:commandButton>
 
         <h:panelGrid id="content" columns="1">
             <h:outputText value="Content:"/>
-            <h:inputTextarea readonly="true" value="#{uploadPage.fileContent}" rows="10" cols="100"/>
+            <h:inputTextarea readonly="true" value="#{uploadPage.fileContent}"
+                    rows="10" cols="100"/>
         </h:panelGrid>
     </h:form>
 </h:body>
