@@ -69,7 +69,7 @@
     </build>
 	
     <properties>
-        <mojarra.version>2.2.0-m12</mojarra.version>
+        <mojarra.version>2.2.0-m15</mojarra.version>
         <jetty.version>8.1.10.v20130312</jetty.version>
     </properties>
 </project>
