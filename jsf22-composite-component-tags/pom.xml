@@ -9,19 +9,66 @@
     <version>1.0.0</version>
     <name>JSFlive - JSF 2.2 Composite component tags</name>
 
+    <profiles>
+        <profile>
+            <id>mojarra</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.sun.faces</groupId>
+                    <artifactId>jsf-api</artifactId>
+                    <version>${mojarra.version}</version>
+                    <scope>compile</scope>
+                </dependency>
+                <dependency>
+                    <groupId>com.sun.faces</groupId>
+                    <artifactId>jsf-impl</artifactId>
+                    <version>${mojarra.version}</version>
+                    <scope>compile</scope>
+                </dependency>
+            </dependencies>
+            <properties>
+                <override-web-xml>src/main/jetty/override-mojarra-web.xml</override-web-xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>myfaces</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-api</artifactId>
+                    <version>${myfaces.version}</version>
+                    <scope>compile</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.myfaces.core</groupId>
+                    <artifactId>myfaces-impl</artifactId>
+                    <version>${myfaces.version}</version>
+                    <scope>compile</scope>
+                </dependency>
+            </dependencies>
+            <repositories>
+                <repository>
+                    <id>apache.snapshots</id>
+                    <name>Apache Snapshot Repository</name>
+                    <url>http://repository.apache.org/snapshots</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <properties>
+                <override-web-xml>src/main/jetty/override-myfaces-web.xml</override-web-xml>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
-        <dependency>
-            <groupId>com.sun.faces</groupId>
-            <artifactId>jsf-api</artifactId>
-            <version>${mojarra.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.faces</groupId>
-            <artifactId>jsf-impl</artifactId>
-            <version>${mojarra.version}</version>
-            <scope>compile</scope>
-        </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-servlet_3.0_spec</artifactId>
@@ -52,7 +99,7 @@
                 <configuration>
                     <webAppConfig>
                         <contextPath>/${project.artifactId}</contextPath>
-                        <overrideDescriptor>src/main/jetty/override-mojarra-web.xml</overrideDescriptor>
+                        <overrideDescriptor>${override-web-xml}</overrideDescriptor>
                     </webAppConfig>
                     <stopKey>stop</stopKey>
                     <stopPort>8081</stopPort>
@@ -75,6 +122,7 @@
     </build>
 	
     <properties>
+        <myfaces.version>2.2.0-SNAPSHOT</myfaces.version>
         <mojarra.version>2.2.0-m15</mojarra.version>
         <jetty.version>8.1.10.v20130312</jetty.version>
     </properties>
