@@ -15,6 +15,7 @@
         <module>jsf22-composite-component-tags</module>
         <module>jsf22-input-file</module>
         <module>jsf22-resource-dir</module>
+        <module>jsf22-reset-values</module>
         <module>jsf22-view-action</module>
     </modules>
 
