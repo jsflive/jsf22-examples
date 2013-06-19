@@ -16,6 +16,11 @@ public class TestBean {
         value1++;
     }
 
+    public void reset() {
+        value1 = 0;
+        value2 = 0;
+    }
+
     public int getValue1() {
         return value1;
     }

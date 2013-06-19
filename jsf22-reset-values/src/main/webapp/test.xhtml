@@ -26,6 +26,9 @@
         <h:commandButton value="Save">
             <f:ajax execute="v1 v2" render="msgs v1 v2"/>
         </h:commandButton>
+        <h:commandButton value="Reset" action="#{testBean.reset}" immediate="true">
+            <f:resetValues render="form:v1 form:v2"/>
+        </h:commandButton>
     </h:form>
 </h:body>
 </html>
