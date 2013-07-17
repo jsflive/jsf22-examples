@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>JSFlive JSF 2.2 - Example 01</title>
+</h:head>
+<h:body>
+    <h:form id="form">
+        <h:dataTable id="persons" value="#{personPage.persons}" var="person">
+            <h:column>
+                <f:facet name="header">Person</f:facet>
+                <h:link value="#{person.name}" outcome="personDetails">
+                    <f:param name="id" value="#{person.id}"/>
+                </h:link>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</h:body>
+</html>

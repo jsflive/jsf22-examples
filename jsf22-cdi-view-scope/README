@@ -1,0 +1,8 @@
+JSFlive JSF 2.2: CDI View Scope
+===============================
+
+This is example jsf22-cdi-view-scope from Michael Kurz's JSFlive post on JSF 2.2 view actions:
+http://jsflive.wordpress.com/2013/07/17/jsf22-cdi-view-scope
+
+It can be started directly with the Maven Jetty Plugin. Simply call the following command:
+mvn jetty:run

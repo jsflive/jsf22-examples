@@ -11,6 +11,7 @@
 
     <modules>
         <module>jsf22-cc-empty-attribute</module>
+        <module>jsf22-cdi-view-scope</module>
         <module>jsf22-collection-data-model</module>
         <module>jsf22-composite-component-tags</module>
         <module>jsf22-input-file</module>
