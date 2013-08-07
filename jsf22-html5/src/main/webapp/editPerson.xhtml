@@ -26,7 +26,8 @@
             </input>
             <label jsf:for="email">Email:</label>
             <h:inputText id="email" value="#{personPage.selectedPerson.email}"
-                    pt:type="email" pt:placeholder="Enter email" pt:data-required="true">
+                    pt:type="email" pt:placeholder="Enter email">
+                <f:passThroughAttribute name="data-required" value="true"/>
                 <f:validateLength minimum="3"/>
             </h:inputText>
         </h:panelGrid>
