@@ -27,6 +27,11 @@
         </h:panelGrid>
 
         <br/>
+        <a jsf:outcome="editPerson" title="Edit Person">
+            Edit
+            <f:param name="id" value="#{personPage.selectedPerson.id}"/>
+        </a>
+        &#160;
         <a jsf:outcome="personList" title="Back to person list">Back</a>
     </form>
 </body>

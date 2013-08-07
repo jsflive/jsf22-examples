@@ -19,7 +19,7 @@ public class PersonRepository implements Serializable {
 
     @PostConstruct
     protected void init() {
-        persons.put(1, new Person(1, "Person 1", "person1@server.com"));
+        persons.put(1, new Person(1, "", "person1@server.com"));
         persons.put(2, new Person(2, "Person 2", "person2@server.com"));
         persons.put(3, new Person(3, "Person 3", "person3@server.com"));
     }
