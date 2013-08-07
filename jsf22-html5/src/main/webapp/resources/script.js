@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('input[type=text]').change(function (event) {
+    $('input').change(function (event) {
         var targetElement = $(event.target);
         var required = $(targetElement).data("required");
         if (required && !targetElement.val()) {
