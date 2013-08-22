@@ -22,7 +22,7 @@
                 <contracts>contract2</contracts>
             </contract-mapping>
             <contract-mapping>
-                <url-pattern>/test3.xhtml</url-pattern>
+                <url-pattern>/special/*</url-pattern>
                 <contracts>contract3</contracts>
             </contract-mapping>
         </resource-library-contracts>
