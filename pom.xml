@@ -17,6 +17,7 @@
         <module>jsf22-html5</module>
         <module>jsf22-input-file</module>
         <module>jsf22-resource-dir</module>
+        <module>jsf22-res-lib-contracts</module>
         <module>jsf22-reset-values</module>
         <module>jsf22-view-action</module>
     </modules>
