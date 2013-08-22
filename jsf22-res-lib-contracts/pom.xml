@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>at.jsflive</groupId>
-    <artifactId>jsf22-examples</artifactId>
+    <artifactId>jsf22-res-lib-contracts</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <name>JSFlive - JSF 2.2 Examples</name>
@@ -15,7 +15,7 @@
     </modules>
 
     <build>
-        <finalName>jsf22-res-lb-contracts</finalName>
+        <finalName>jsf22-res-lib-contracts</finalName>
     </build>
 	
 </project>
