@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+            http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+        version="2.2">
+
+    <flow-definition id="flow2">
+        <flow-return id="flow2-return">
+            <from-outcome>/flowTest.xhtml</from-outcome>
+        </flow-return>
+    </flow-definition>
+
+</faces-config>
