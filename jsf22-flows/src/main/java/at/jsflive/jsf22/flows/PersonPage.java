@@ -1,4 +1,4 @@
-package at.jsflive.jsf22.example01;
+package at.jsflive.jsf22.flows;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
