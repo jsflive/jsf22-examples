@@ -11,9 +11,10 @@
 <h:body>
     <h:panelGrid coulns="1">
         <h:link value="Start flow1 (implicit)" outcome="flow1"/>
-        <h:link value="Start flow2 (config)" outcome="flow2"/>
-        <h:link value="Start flow3 (config, flow scoped bean)" outcome="flow3"/>
-        <h:link value="Start flow4 (config, flow scoped bean, explicit start node)" outcome="flow4"/>
+        <h:link value="Start flow2 (XML config)" outcome="flow2"/>
+        <h:link value="Start flow3 (XML config, flow scoped bean)" outcome="flow3"/>
+        <h:link value="Start flow4 (XML config, flow scoped bean, explicit start node, call flow5)" outcome="flow4"/>
+        <h:link value="Start flow6 (Java config, explicit start node, call flow5)" outcome="flow6"/>
     </h:panelGrid>
 </h:body>
 </html>

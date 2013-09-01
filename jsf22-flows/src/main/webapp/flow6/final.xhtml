@@ -8,18 +8,12 @@
     <title>JSFlive JSF 2.2 - Faces Flows</title>
 </h:head>
 <h:body>
-    <h1>Flow4</h1>
+    <h1>Flow6</h1>
 
     <h:form id="form">
         <h:panelGrid columns="2">
-            <h:outputText value="Value 1:"/>
-            <h:outputText value="#{flow4Bean.value1}"/>
-            <h:outputText value="Value 2:"/>
-            <h:outputText value="#{flow4Bean.value2}"/>
-            <h:outputText value="Value 1 (Flow Scope):"/>
+            <h:outputText value="Value 1 (Flow Scope set in flow5):"/>
             <h:outputText value="#{flowScope.value1}"/>
-            <h:outputText value="Value 2 (Flow Scope):"/>
-            <h:outputText value="#{flowScope.value2}"/>
         </h:panelGrid>
         <h:commandButton value="Finish" action="return"/>
     </h:form>

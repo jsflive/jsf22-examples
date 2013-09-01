@@ -12,9 +12,24 @@
             <vdl-document>/flow4/step1.xhtml</vdl-document>
         </view>
 
+        <flow-call id="callFlow5">
+            <flow-reference>
+                <flow-id>flow5</flow-id>
+            </flow-reference>
+            <outbound-parameter>
+                <name>param1</name>
+                <value>#{flow4Bean.value1}</value>
+            </outbound-parameter>
+        </flow-call>
+
         <flow-return id="return">
             <from-outcome>/flowTest.xhtml?faces-redirect=true</from-outcome>
         </flow-return>
+
+        <view id="return-from-flow5">
+            <vdl-document>/flow4/final.xhtml</vdl-document>
+        </view>
+
     </flow-definition>
 
 </faces-config>
