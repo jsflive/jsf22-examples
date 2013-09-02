@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>at.jsflive</groupId>
+    <artifactId>jsf22-contracts</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>JSFlive - JSF 2.2 Examples</name>
+
+    <modules>
+        <module>contract3</module>
+        <module>webapp</module>
+    </modules>
+
+    <build>
+        <finalName>jsf22-contracts</finalName>
+    </build>
+	
+</project>

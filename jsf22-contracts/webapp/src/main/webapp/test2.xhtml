@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>JSFlive JSF 2.2 Resource Library Contracts</title>
+</head>
+<body>
+
+
+    <ui:composition template="/template.xhtml">
+
+        <ui:define name="header">
+            <h1>Test page 2 with contract 2</h1>
+        </ui:define>
+
+        <ui:define name="content">
+            <h2>Header 2</h2>
+
+            <p>Content 2 <h:graphicImage library="images" name="test.png"/></p>
+
+            <p>
+                <h:link outcome="/test1" value="Test 1"/>
+                <h:link outcome="/special/test3" value="Test 3" style="margin-left: 8px"/>
+            </p>
+        </ui:define>
+
+    </ui:composition>
+
+</body>
+</html>

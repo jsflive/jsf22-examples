@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+            http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+		version="2.2">
+
+	<!-- Settings for application -->
+	<application>
+		<locale-config>
+			<default-locale>de</default-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+
+        <resource-library-contracts>
+            <contract-mapping>
+                <url-pattern>/test1.xhtml</url-pattern>
+                <contracts>contract1</contracts>
+            </contract-mapping>
+            <contract-mapping>
+                <url-pattern>/test2.xhtml</url-pattern>
+                <contracts>contract2</contracts>
+            </contract-mapping>
+            <contract-mapping>
+                <url-pattern>/special/*</url-pattern>
+                <contracts>contract3</contracts>
+            </contract-mapping>
+        </resource-library-contracts>
+	</application>
+
+</faces-config>

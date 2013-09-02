@@ -1,0 +1,25 @@
+.header {
+    background-color: rgb(255,90,80);
+    color: rgb(255,230,40);
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.content {
+    background-color: rgb(245,245,245);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-family: Tahoma, Verdana, sans-serif;
+    margin: 5px 0 5px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-family: Tahoma, Verdana, sans-serif;
+    margin: 5px 0 5px 0;
+}
