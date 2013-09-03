@@ -71,7 +71,7 @@
     <dependencies>
         <dependency>
             <groupId>at.jsflive</groupId>
-            <artifactId>jsf22-res-lib-contracts-contract3</artifactId>
+            <artifactId>jsf22-contracts-contract3</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
