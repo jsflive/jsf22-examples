@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>JSFlive JSF 2.2 - Ajax Delay</title>
+</h:head>
+<h:body>
+    <h:outputScript library="javax.faces" name="jsf.js"/>
+
+    <h:form id="form">
+        <h:inputText value="#{testBean.product}"
+                onkeyup="jsf.ajax.request(this, event, {render: 'form:result', delay: 500})">
+            <ui:remove>
+                <!-- Does not work with Mojarra 2.2.2, see JAVASERVERFACES-3020-->
+                <f:ajax event="keyup" render="result" delay="300"/>
+            </ui:remove>
+        </h:inputText>
+        <br/>
+        <h:panelGroup id="result">
+            <ui:repeat value="#{testBean.matchingProducts}" var="p">
+                #{p}<br/>
+            </ui:repeat>
+        </h:panelGroup>
+    </h:form>
+
+</h:body>
+</html>
