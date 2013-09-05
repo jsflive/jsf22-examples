@@ -1,4 +1,4 @@
-package at.jsflive.jsf22.example01;
+package at.jsflive.jsf22.cdiviewscope;
 
 import java.io.Serializable;
 
