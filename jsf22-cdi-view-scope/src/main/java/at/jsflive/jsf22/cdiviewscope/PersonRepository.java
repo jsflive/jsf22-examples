@@ -2,7 +2,6 @@ package at.jsflive.jsf22.cdiviewscope;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ApplicationScoped;
-import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +11,6 @@ import java.util.TreeMap;
 /**
  * @author Michael Kurz
  */
-@ManagedBean
 @ApplicationScoped
 public class PersonRepository implements Serializable {
     private Map<Integer, Person> persons = new TreeMap<Integer, Person>();

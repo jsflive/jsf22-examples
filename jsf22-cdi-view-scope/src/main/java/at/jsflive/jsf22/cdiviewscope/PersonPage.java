@@ -1,16 +1,16 @@
 package at.jsflive.jsf22.cdiviewscope;
 
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.List;
 
-@ManagedBean
+@Named
 @ViewScoped
 public class PersonPage {
-    @ManagedProperty("#{personRepository}")
+    @Inject
     private PersonRepository personRepository;
 
     private int selectedId;
@@ -43,7 +43,4 @@ public class PersonPage {
         return selectedId;
     }
 
-    public void setPersonRepository(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
 }
