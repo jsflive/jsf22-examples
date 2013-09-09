@@ -7,7 +7,7 @@
 
     <flow-definition id="flow3">
         <flow-return id="flow3-return">
-            <from-outcome>/flowTest.xhtml?faces-redirect=true</from-outcome>
+            <from-outcome>/flowTest.xhtml</from-outcome>
         </flow-return>
     </flow-definition>
 
